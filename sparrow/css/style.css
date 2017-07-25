@@ -49,7 +49,9 @@ input,select,button,textarea {outline:none;}
 .header-phone span {background:url(../img/icon-phone.png) left top no-repeat; background-position:left 1px; padding:1px 0px 0px 25px;font-size:11px;color:#fff;font-family: 'Montserrat', sans-serif; font-weight:700;display:inline-block;min-height:15px;}
 .header-phone a[href^=tel]{color:#fff; text-decoration:none;}
 .header-account {float:right;}
+.header-account1 {float:right;}
 .header-account a {color:#fff;font-size:11px;text-transform:uppercase;font-family:'Montserrat';font-weight:700;text-decoration:none;display:inline-block;border-left:1px solid #333333;border-right:1px solid #333333;	padding:14px 22px 0px 22px;height:26px;	}
+.header-account1 a {color:#fff;font-size:11px;text-transform:uppercase;font-family:'Montserrat';font-weight:700;text-decoration:none;display:inline-block;border-left:1px solid #333333;border-right:1px solid #333333;	padding:14px 22px 0px 22px;height:26px;	}
 .header-social {float:right;border-left:1px solid #333333;	padding:13px 22px 0px 25px;height:27px;	}
 .header-social a {display:inline-block;width:14px;height:14px;margin:0px 9px 0px 9px;}
 .header-social .social-twitter {background:url(../img/head-twitter.png) left top no-repeat;margin-left:0px;}
@@ -174,11 +176,18 @@ input,select,button,textarea {outline:none;}
 
 .overlay {display:none;width:100%;height:100%;background:rgba(20,29,30,0.19);position:fixed;left:0px;top:0px;z-index:9999;}
 .autorize-popup {z-index:9999;width:444px;height:255px;background:#fff;position:fixed;left:50%;top:-300px;margin-top:-128px;margin-left:-222px;}
+.autorize-popup2 {z-index:9999;width:444px;height:255px;background:#fff;position:fixed;left:50%;top:-300px;margin-top:-128px;margin-left:-222px;}
 .autorize-tab-a {display:block;float:left;width:82px;height:27px;text-align:center;text-decoration:none;font-family: 'Raleway';font-weight:600;font-size:13px;text-transform:uppercase;color:#fff;background:#141d1e;padding-top:12px;}
+.autorize-tab-a1 {display:block;float:left;width:82px;height:27px;text-align:center;text-decoration:none;font-family: 'Raleway';font-weight:600;font-size:13px;text-transform:uppercase;color:#fff;background:#141d1e;padding-top:12px;}
 .autorize-tab-b {display:block;float:left;width:303px;height:27px;text-decoration:none;font-family: 'Raleway';font-weight:600;font-size:13px;text-transform:uppercase;color:#fff;background:#141d1e;padding-top:12px;padding-left:20px;}
+.autorize-tab-b1 {display:block;float:left;width:303px;height:27px;text-decoration:none;font-family: 'Raleway';font-weight:600;font-size:13px;text-transform:uppercase;color:#fff;background:#141d1e;padding-top:12px;padding-left:20px;}
 .autorize-tabs a.current {color:#292828;background:#fff;cursor:default;} 
+.autorize-tabs1 a.current1 {color:#292828;background:#fff;cursor:default;} 
 .autorize-close {display:block;width:39px;height:39px;float:right;background:url(../img/popup-close.png) left top no-repeat;}
+.autorize-close1 {display:block;width:39px;height:39px;float:right;background:url(../img/popup-close.png) left top no-repeat;}
 .autorize-close:hover {
+	background-position:left -39px;
+}.autorize-close1:hover {
 	background-position:left -39px;
 }
 .autorize-lbl {
@@ -187,7 +196,16 @@ input,select,button,textarea {outline:none;}
 	color:#6d6d6d;	
 	margin:0px 0px 18px 0px;
 }
+.autorize-lbl1 {
+	font-family:'Raleway';
+	font-size:13px;
+	color:#6d6d6d;	
+	margin:0px 0px 18px 0px;
+}
 .autorize-padding {
+	padding:22px 20px 20px 21px;
+}
+.autorize-padding1 {
 	padding:22px 20px 20px 21px;
 }
 .autorize-tab-content {
@@ -195,6 +213,23 @@ input,select,button,textarea {outline:none;}
 }
 
 .autorize-tab-content input[type='text'] {
+	border:1px solid #ebebeb;
+	background:#fff;
+	width:381px;
+	border-radius:3px;
+	font-size:11px;
+	padding:10px 8px 10px 8px;
+	text-transform:uppercase;
+	font-family:'Raleway';
+	font-weight:600;
+	color:#8a8a8a;	
+	margin-bottom:15px;
+
+}.autorize-tab-content1 {
+	display:none;
+}
+
+.autorize-tab-content1 input[type='text'] {
 	border:1px solid #ebebeb;
 	background:#fff;
 	width:381px;
@@ -240,6 +275,7 @@ input,select,button,textarea {outline:none;}
 }
 
 .header-account a:hover,
+.header-account1 a:hover,
 .header-viewed-btn:hover,
 .header-viewed:hover .header-viewed-btn,
 .header-curency a:hover,
@@ -3128,6 +3164,7 @@ nav ul,nav ul li {margin:0px;padding:0px;list-style:none;}
  .catalog-head .search-select {width:100%; float:none; margin-bottom:15px;}
  .catalog-head .search-select:last-child {margin-bottom:0px;}
  .header-account a {padding-left: 19px; padding-right: 19px;}
+ .header-account1 a {padding-left: 19px; padding-right: 19px;}
  .header-lang {display: none;}
  .tweeter-item-r {width:93.2%;}
  .search-widget input[type="text"] {width:93.2%;}

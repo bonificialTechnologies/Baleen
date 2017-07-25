@@ -173,9 +173,20 @@ $(document).ready(function(){
 		});
 		return false;
 	});
+		$('.header-account1 a').click(function(){
+		$('.overlay').fadeIn(function(){
+			$('.autorize-popup2').animate({top: '50%'}, 300).find('input:text').eq('0').focus();
+		});
+		return false;
+	});
 
 	$('.overlay').click(function(){
 		$('.autorize-popup').animate({top: '-300px'}, 300, function(){
+			$('.overlay').fadeOut();	
+		});
+	});
+	$('.overlay').click(function(){
+		$('.autorize-popup2').animate({top: '-300px'}, 300, function(){
 			$('.overlay').fadeOut();	
 		});
 	});
@@ -190,6 +201,19 @@ $(document).ready(function(){
 			var $index = $(this).index();
 			$('.autorize-tabs a').removeClass('current').eq($index).addClass('current');
 			$('.autorize-tab-content').hide().eq($index).fadeIn().find('input:text').eq('0').focus();
+		}
+		return false;
+	});
+	$('.autorize-tab-content1').eq('0').css('display','block');
+	$('.autorize-tabs1 a').click(function(){
+		if ( $(this).is('.autorize-close1') ) {
+			$('.autorize-popup2').animate({top: '-300px'}, 300, function(){
+				$('.overlay').fadeOut();	
+			});
+		} else {
+			var $index = $(this).index();
+			$('.autorize-tabs1 a').removeClass('current1').eq($index).addClass('current1');
+			$('.autorize-tab-content1').hide().eq($index).fadeIn().find('input:text').eq('0').focus();
 		}
 		return false;
 	});
