@@ -159,11 +159,28 @@ $(document).ready(function(){
 			
 		}
 	});
+	$('.srch-lbl1').click(function(){
+		if ( $(this).is('.open') ) {
+			$(this).closest('.search-tab-content1').find('.search-asvanced1').hide();
+			$(this).text('Advanced Search options').removeClass('open');
+		} else {
+			
+			$(this).closest('.search-tab-content').find('.search-asvanced1').fadeIn();
+			$(this).text('close search options').addClass('open');	
+			
+		}
+	});
 
 	$('.search-tab').click(function(){
 		var $index = $(this).index();
 		$('.search-tab-content').hide().eq($index).fadeIn();
 		$('.search-tab').removeClass('active').eq($index).addClass('active');
+		return false;
+	});
+	$('.search-tab1').click(function(){
+		var $index = $(this).index();
+		$('.search-tab-content1').hide().eq($index).fadeIn();
+		$('.search-tab1').removeClass('active1').eq($index).addClass('active1');
 		return false;
 	});
 
